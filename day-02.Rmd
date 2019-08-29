@@ -1,7 +1,7 @@
 ---
-title: "Day 1"
-author: "Joshua Davidson"
-date: "8/27/2019"
+title: "Day 2"
+author: "Avery Smith"
+date: "8/29/2019"
 output: html_document
 ---
 
@@ -133,11 +133,50 @@ print(f2)
 ```{r}
 table(f2)
 ```
-
 ```{r}
-
+months <- c("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec")
 ```
 
+```{r}
+months_fact <- factor(months,
+                      levels = c("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"),
+                      ordered = TRUE)
+```
+
+
+```{r}
+plot(table(months_fact))
+```
+```{r}
+print(months_fact)
+```
+
+```{r}
+matrix(v2, nrow = 1, ncol = 4)
+```
+
+```{r}
+matrix(v2, nrow = 2, ncol = 2, byrow = TRUE)
+```
+
+#### Subsetting a matrix
+
+```{r}
+m1 <- matrix(v2, nrow = 2, ncol = 2)
+```
+
+```{r}
+print(m1)
+```
+
+
+```{r}
+print(m1[2,1])
+```
+
+```{r}
+print(m1[, 2])
+```
 
 
 ### Matrix
